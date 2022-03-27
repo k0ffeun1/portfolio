@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Euclid';
+    src: url(../fonts/EuclidFlex-Regular.otf);
+    src: url(../fonts/EuclidFlex-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Euclid';
+    src: url(../fonts/EuclidFlex-Light.otf);
+    src: url(../fonts/EuclidFlex-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Euclid';
+    src: url(../fonts/EuclidFlex-Medium.otf);
+    src: url(../fonts/EuclidFlex-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Euclid';
+    src: url(../fonts/EuclidFlex-Semibold.otf);
+    src: url(../fonts/EuclidFlex-Semibold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Euclid';
+    src: url(../fonts/EuclidFlex-Bold.otf);
+    src: url(../fonts/EuclidFlex-Bold.ttf);
+    font-weight: 700;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Euclid';
+    font-size: 30px;
+    color: white;
+}
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 130%;
+    position: relative;
+    display: inline;
+}
+.title::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    background-color: black;
+    bottom: -10px;
+}
+.subtitle {
+    color: #616161;
+    font-size: 30px;
+    text-align: center;
+}
+.text {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+
+.header {
+    padding-top: 100px;
+    background-image: url(../images/header/header__bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+}
+.header__inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+.menu__item-link {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.menu__item-link:hover {
+    color: #a35aef;
+}
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__title {
+    text-align: center;
+    font-size: 3.15vw;
+}
+.header__title-top {
+    animation-name: header__title-top;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+.header__title-bottom {
+    animation-name: header__title-bottom;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+@keyframes header__title-top {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.header__btn {
+    background-color: #a35aef;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: 0.2s;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header__btn:hover {
+    background-color: white;
+    color: #361a34;
+}
+
+.main {
+}
+.about {
+    background-color: white;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about__inner {
+    height: 100vh;
+    justify-content: space-between;
+}
+.about__title {
+}
+.about__inner-content {
+    display: flex;
+}
+.about__item {
+    flex-basis: 25%;
+}
+.about__item-img {
+    
+}
+.about__item-title {
+}
+.about__item-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.about__forme {
+    display: flex;
+}
+.about__me {
+    flex-basis: 50%;
+}
+.about__me-img {
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.about__me-title {
+    margin-bottom: 20px;
+}
+.subtitle {
+}
+.about__me-text {
+    max-width: 70%;
+    text-align: center;
+}
+.text {
+}
+
+.tech__block {
+    flex-basis: 50%;
+}
+.tech__title {
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+.tech__list {
+    max-width: 100%;
+}
+.tech__item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+}
+.tech {
+    background-color: #a35aef;
+    margin-right: 10px;
+    height: 30px;
+}
+.tech__css {
+    flex-basis: 90%;
+}
+.tech__html {
+    flex-basis: 90%;
+}
+.tech__js {
+    flex-basis: 70%;
+}
+.tech__php {
+    flex-basis: 50%;
+}
+.tech__ps {
+    flex-basis: 60%;
+}
+.tech__figma {
+    flex-basis: 70%;
+}
+.tech__name {
+    text-transform: uppercase;
+    width: 150px;
+    height: 100%;
+    background-color: #290c5c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech__percent {
+    display: inline;
+}
+
+.works {
+    background-color: #f5f5f5;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.works__inner {
+}
+.works__title {
+}
+
+
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contacts__inner {
+    height: 50vh;
+    justify-content: space-between;
+}
+.contacts__title {
+    position: relative;
+}
+.contacts__title::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    background-color: white;
+    bottom: -10px;
+}
+.contacts__text {
+    color: #04c2c9;
+}
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__input {
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #a35aef;
+    color: white;
+}
+.form__input::placeholder {
+    color: #eeeeee;
+    text-align: center;
+}
+.form__input-text {
+
+}
+.form__btn {
+    margin-top: 40px;
+    width: 250px;
+    cursor: pointer;
+    background-color: #253861;
+    transition: 0.2s;
+}
+.form__btn:hover {
+    background-color: white;
+    color: #253861;
+}
+
+
+.footer {
+    background-color: black;
+}
+.container {
+}
+.flex {
+}
+.footer__inner {
+}
+.social {
+    display: none;
+}
+.social__item {
+}
+.social__link {
+}
+.social__img {
+    
+}
+.footer__text {
+    font-size: 15px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 12px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #1f0840;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #a35aef;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
