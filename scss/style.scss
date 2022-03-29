@@ -31,6 +31,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -290,7 +291,7 @@ body {
     padding-bottom: 100px;
 }
 .contacts__inner {
-    height: 50vh;
+    height: 70vh;
     justify-content: space-between;
 }
 .contacts__title {
@@ -328,9 +329,17 @@ body {
     color: #eeeeee;
     text-align: center;
 }
-.form__input-text {
-
+.form__input-textarea {
+    height: 200px;
 }
+.form__input-text:focus {
+    background-color: white;
+    color: black;
+} 
+.form__input-textarea:focus {
+    background-color: white;
+    color: black;
+} 
 .form__btn {
     margin-top: 40px;
     width: 250px;

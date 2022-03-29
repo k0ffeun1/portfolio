@@ -6,6 +6,7 @@
     <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick1.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,14 +20,14 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <button class="menu__item-link" id="menu__link-about">
+                                <a class="menu__item-link" href="#about">
                                     О себе
-                                </button>
+                                </a>
                             </li>
                             <li class="menu__item">
-                                <button class="menu__item-link" id="menu__link-contacts">
+                                <a class="menu__item-link" href="#contacts">
                                     Контакты
-                                </button>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -37,16 +38,16 @@
                         <span class="header__title-bottom">И я фронт-энд разработчик.</span>
                     </h1>
                 </div>
-                <a class="header__btn" href="">
+                <a class="header__btn" href="#works">
                     Мои работы
                 </a>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="about" id="second">
+        <section class="about">
             <div class="container flex">
-                <div class="about__inner flex">
+                <div class="about__inner flex" id="about">
                     <h2 class="about__title title" data-aos="fade-in">
                         о себе
                     </h2>
@@ -90,71 +91,89 @@
                     <div class="about__forme">
                         <div class="about__me flex">
                             <img class="about__me-img" src="images/forme/me.jpg" alt="" data-aos="fade-up"
-                                data-aos-duration="1500" data-aos-offset="300">
+                                data-aos-duration="1500" data-aos-offset="200">
                             <h3 class="about__me-title subtitle" data-aos="fade-up" data-aos-duration="1500"
-                                data-aos-offset="300">
+                                data-aos-offset="100">
                                 Who's this guy?
                             </h3>
                             <p class="about__me-text text" data-aos="fade-up" data-aos-duration="1500"
-                                data-aos-offset="300">
+                                data-aos-offset="100">
                                 I'm a Front-End Developer for ChowNow in Los Angeles, CA.
                                 I have serious passion for UI effects, animations and creating intuitive, dynamic user
                                 experiences.
                                 Let's make something special.
                             </p>
                         </div>
-                        <div class="tech__block" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+                        <div class="tech__block" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
                             <h3 class="tech__title subtitle">
                                 My skills
                             </h3>
                             <div class="tech__list">
                                 <div class="tech__item">
-                                    <div class="tech tech__css">
+                                    <div
+                                        class="tech tech__css revealator-delay3 revealator-slideleft revealator-once revealator-duration5">
                                         <div class="tech__name text">
                                             css
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">90%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay3 revealator-slideleft revealator-once revealator-duration5">
+                                        90%</p>
                                 </div>
                                 <div class="tech__item">
-                                    <div class="tech tech__html">
+                                    <div
+                                        class="tech tech__html revealator-delay4 revealator-slideleft revealator-once revealator-duration7">
                                         <div class="tech__name text">
                                             html
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">90%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay4 revealator-slideleft revealator-once revealator-duration7">
+                                        90%</p>
                                 </div>
                                 <div class="tech__item">
-                                    <div class="tech  tech__js">
+                                    <div
+                                        class="tech  tech__js revealator-delay5 revealator-slideleft revealator-once revealator-duration9">
                                         <div class="tech__name text">
                                             javascript
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">70%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay5 revealator-slideleft revealator-once revealator-duration9">
+                                        70%</p>
                                 </div>
                                 <div class="tech__item">
-                                    <div class="tech tech__php">
+                                    <div
+                                        class="tech tech__php revealator-delay6 revealator-slideleft revealator-once revealator-duration11">
                                         <div class="tech__name text">
                                             php
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">50%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay6 revealator-slideleft revealator-once revealator-duration11">
+                                        50%</p>
                                 </div>
                                 <div class="tech__item">
-                                    <div class="tech tech__ps">
+                                    <div
+                                        class="tech tech__ps revealator-delay7 revealator-slideleft revealator-once revealator-duration13">
                                         <div class="tech__name text">
                                             photoshop
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">60%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay7 revealator-slideleft revealator-once revealator-duration13">
+                                        60%</p>
                                 </div>
                                 <div class="tech__item">
-                                    <div class="tech tech__figma">
+                                    <div
+                                        class="tech tech__figma revealator-delay8 revealator-slideleft revealator-once revealator-duration15">
                                         <div class="tech__name text">
                                             figma
                                         </div>
                                     </div>
-                                    <p class="tech__percent text">70%</p>
+                                    <p
+                                        class="tech__percent text revealator-delay8 revealator-slideleft revealator-once revealator-duration15">
+                                        70%</p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +181,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
             <div class="container flex">
                 <div class="works__inner">
                     <h2 class="works__title title" data-aos="fade-in">
@@ -171,7 +190,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container flex">
                 <div class="contacts__inner flex">
                     <h2 class="contacts__title title" data-aos="fade-in">
@@ -185,6 +204,8 @@
                             data-aos="fade-in">
                         <input class="form__input form__input-text" type="text" name="email" placeholder="Эмейл"
                             data-aos="fade-in">
+                        <input class="form__input form__input-textarea" type="textarea" name="message"
+                            placeholder="Ваше сообщение" data-aos="fade-in" wrap="soft">
                         <button class="form__input form__btn" type="submit" data-aos="fade-in">Отправить</button>
                     </form>
                 </div>
@@ -197,13 +218,13 @@
                 <div class="social">
                     <div class="social__item">
                         <a class="social__link" href="">
-                        
+
                         </a>
                         <a class="social__link" href="images/social/inst.png">
-                           
+
                         </a>
                         <a class="social__link" href="">
-                        
+
                         </a>
                     </div>
                 </div>
@@ -217,6 +238,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

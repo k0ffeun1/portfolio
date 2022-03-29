@@ -1,18 +1,18 @@
-const navLinks = document.querySelectorAll(".menu__item-link");
-const testBtn = document.querySelector("#menu__link-about");
+// const navLinks = document.querySelectorAll(".menu__item-link");
+// const testBtn = document.querySelector("#menu__link-about");
 
 
-testBtn.addEventListener("click", function() {
-    console.log('clicked');
-});
+// testBtn.addEventListener("click", function() {
+//     console.log('clicked');
+// });
 
-for(let navItem of navLinks) {
-    navItem.addEventListener("click", function() {
-        console.log('link clicked');
-    });
-}
+// for(let navItem of navLinks) {
+//     navItem.addEventListener("click", function() {
+//         console.log('link clicked');
+//     });
+// }
 
-console.log(navLinks);
+// console.log(navLinks);
 
 
 
