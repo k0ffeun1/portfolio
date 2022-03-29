@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick1.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header" id="first">
+    <header class="header" id="first" data-aos="fade-in">
         <div class="container flex">
             <div class="header__wrapper">
                 <div class="header__inner">
@@ -47,12 +47,11 @@
         <section class="about" id="second">
             <div class="container flex">
                 <div class="about__inner flex">
-                    <h2 class="about__title title">
+                    <h2 class="about__title title" data-aos="fade-in">
                         о себе
                     </h2>
                     <div class="about__inner-content">
-                        <div class="about__item">
-                            <img class="about__item-img" src="images/Новая папка/fast.eps" alt="">
+                        <div class="about__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3 class="about__item-title subtitle">
                                 Скорость
                             </h3>
@@ -60,7 +59,7 @@
                                 Быстрое время загрузки и взаимодействие без задержек - мой наивысший приоритет.
                             </p>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="600">
                             <img class="about__item-img" src="" alt="">
                             <h3 class="about__item-title subtitle">
                                 Адаптивность
@@ -69,7 +68,7 @@
                                 Мои макеты будут работать на любом устройстве, большом или маленьком.
                             </p>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="fade-up" data-aos-duration="2100" data-aos-delay="700">
                             <img class="about__item-img" src="" alt="">
                             <h3 class="about__item-title subtitle">
                                 Простота
@@ -78,7 +77,7 @@
                                 Сильное предпочтение простоты в использовании.
                             </p>
                         </div>
-                        <div class="about__item">
+                        <div class="about__item" data-aos="fade-up" data-aos-duration="2400" data-aos-delay="800">
                             <img class="about__item-img" src="" alt="">
                             <h3 class="about__item-title subtitle">
                                 Динамика
@@ -90,18 +89,21 @@
                     </div>
                     <div class="about__forme">
                         <div class="about__me flex">
-                            <img class="about__me-img" src="images/forme/me.jpg" alt="">
-                            <h3 class="about__me-title subtitle">
+                            <img class="about__me-img" src="images/forme/me.jpg" alt="" data-aos="fade-up"
+                                data-aos-duration="1500" data-aos-offset="300">
+                            <h3 class="about__me-title subtitle" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-offset="300">
                                 Who's this guy?
                             </h3>
-                            <p class="about__me-text text">
+                            <p class="about__me-text text" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-offset="300">
                                 I'm a Front-End Developer for ChowNow in Los Angeles, CA.
                                 I have serious passion for UI effects, animations and creating intuitive, dynamic user
                                 experiences.
                                 Let's make something special.
                             </p>
                         </div>
-                        <div class="tech__block">
+                        <div class="tech__block" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
                             <h3 class="tech__title subtitle">
                                 My skills
                             </h3>
@@ -163,7 +165,7 @@
         <section class="works">
             <div class="container flex">
                 <div class="works__inner">
-                    <h2 class="works__title title">
+                    <h2 class="works__title title" data-aos="fade-in">
                         Мои работы
                     </h2>
                 </div>
@@ -172,16 +174,18 @@
         <section class="contacts">
             <div class="container flex">
                 <div class="contacts__inner flex">
-                    <h2 class="contacts__title title">
+                    <h2 class="contacts__title title" data-aos="fade-in">
                         Контакты
                     </h2>
-                    <p class="contacts__text text">
+                    <p class="contacts__text text" data-aos="fade-in">
                         Остались вопросы или хотите работать вместе?
                     </p>
                     <form class="contacts__form" action="" method="post">
-                        <input class="form__input form__input-text" type="text" name="name" placeholder="Имя">
-                        <input class="form__input form__input-text" type="text" name="email" placeholder="Эмейл">
-                        <button class="form__input form__btn" type="submit">Отправить</button>
+                        <input class="form__input form__input-text" type="text" name="name" placeholder="Имя"
+                            data-aos="fade-in">
+                        <input class="form__input form__input-text" type="text" name="email" placeholder="Эмейл"
+                            data-aos="fade-in">
+                        <button class="form__input form__btn" type="submit" data-aos="fade-in">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -193,17 +197,17 @@
                 <div class="social">
                     <div class="social__item">
                         <a class="social__link" href="">
-                            <img class="social__img" src="images/social/vk.png" alt="">
+                        
                         </a>
                         <a class="social__link" href="images/social/inst.png">
-                            <img class="social__img" src="" alt="">
+                           
                         </a>
                         <a class="social__link" href="">
-                            <img class="social__img" src="images/social/telegram.png" alt="">
+                        
                         </a>
                     </div>
                 </div>
-                <p class="footer__text">
+                <p class="footer__text" data-aos="fade-in">
                     AZAMAT MAKSUTOV&copy;2022
                 </p>
             </div>
@@ -211,7 +215,7 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
