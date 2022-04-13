@@ -81,14 +81,41 @@ body {
     line-height: 120%;
 }
 
-
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
+.video__media {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 .header {
     padding-top: 100px;
-    background-image: url(../images/header/header__bg.jpg);
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 .header__wrapper {
     display: flex;
@@ -295,15 +322,20 @@ body {
     // background-image: url(../images/contacts/contacts__bg2.jpg);
     // background-size: cover;
     // background-position: center;
+    background-color: white;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .contacts__inner {
-    height: 70vh;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 .contacts__title {
     position: relative;
+    color: black;
+    margin-bottom: 100px;
+    text-align: center;
+    display: inline;
 }
 .contacts__title::before {
     content: '';
@@ -312,37 +344,42 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 5px;
-    background-color: white;
+    background-color: black;
     bottom: -10px;
+    display: inline;
 }
 .contacts__text {
-    color: #04c2c9;
+    color: #a35aef;
+    margin-bottom: 40px;
+    width: 100%;
 }
 .contacts__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 30%;
 }
 .form__input {
     margin-bottom: 15px;
     outline: none;
     border: none;
     border-radius: 20px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
-    background-color: #a35aef;
+    background-color: #290c5c;
     color: white;
 }
 .form__input::placeholder {
-    color: #eeeeee;
+    color: #a0a5a7;
     text-align: center;
 }
 .form__input-textarea {
     height: 200px;
 }
+.form__input-textarea:focus {
+    border: 1px solid #616161;
+}
 .form__input-text:focus {
-    background-color: white;
-    color: black;
+    color: white;
 } 
 .form__input-textarea:focus {
     background-color: white;

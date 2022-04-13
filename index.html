@@ -13,37 +13,43 @@
 </head>
 
 <body>
-    <header class="header" id="first" data-aos="fade-in">
-        <div class="container flex">
-            <div class="header__wrapper">
-                <div class="header__inner">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#about">
-                                    О себе
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#contacts">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__content">
-                    <h1 class="header__title">
-                        <span class="header__title-top">Привет, меня зовут Азамат Максутов <br></span>
-                        <span class="header__title-bottom">И я фронт-энд разработчик.</span>
-                    </h1>
-                </div>
-                <a class="header__btn" href="#works">
-                    Мои работы
-                </a>
-            </div>
+    <div class="intro">
+        <div class="video">
+            <video class="video__media" src="video/video.mp4" autoplay muted loop></video>
         </div>
-    </header>
+        <header class="header" id="first" data-aos="fade-in">
+            <div class="container flex">
+                <div class="header__wrapper">
+                    <div class="header__inner">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#about">
+                                        О себе
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#contacts">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__content">
+                        <h1 class="header__title">
+                            <span class="header__title-top">Привет, меня зовут Азамат Максутов <br></span>
+                            <span class="header__title-bottom">И я фронт-энд разработчик.</span>
+                        </h1>
+                    </div>
+                    <a class="header__btn" href="#works">
+                        Мои работы
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    
     <main class="main">
         <section class="about">
             <div class="container flex">
@@ -192,8 +198,8 @@
             </div>
         </section>
         <section class="contacts" id="contacts">
-            <div class="container flex">
-                <div class="contacts__inner flex">
+            <div class="container">
+                <div class="contacts__inner">
                     <h2 class="contacts__title title" data-aos="fade-in">
                         Контакты
                     </h2>
@@ -235,6 +241,10 @@
             </div>
         </div>
     </footer>
+    <div class="loader">
+        <div class="loader__inner">
+        </div>
+    </div>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
